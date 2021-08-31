@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>This one cool metadata trick you won't believe</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,8 +16,115 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>This one cool metadata trick you won't believe</h1>
+					<h3>How applying clickbait and SEO techniques to your metadata can make it more discoverable</h3>
+					<p>Jo Cook | Data Discovery Lead | Astun Technology</p>
+				</section>
+				
+				<section>
+					<h3>Who is this "Astun Technology" of which you speak?</h3>
+				</section>
+
+				<section>
+					<p>Astun Technology provide spatial services (mapping, databases) to a cross-sector range of clients, based on an open source technology stack.</p>
+					<p class="fragment">We also provide metadata services, and our clients include Scottish Government, DEFRA and the Environment Agency, and Ordnance Survey.</p>
+					<p class="fragment">As part of this we contribute to software development, documentation and guidance, standards implementation, and standards development.</p>
+				</section>
+
+				<section>
+					<h3>The Premise:</h3>
+					<p class="fragment">People are mainly using search engines to find data</p>
+					<p class="fragment">Data needs to be Findable Accessible Interoperable and Reusable</p>
+				</section>
+
+				<section>
+					<blockquote>Google was the highest-ranking traffic source for 4 of the 6 (data portals) assessed</blockquote>
+					<aside class="notes">
+						Geospatial Commission Research from 2019 found that 70% of users searching for data will use search engines rather than portals. So, datasets are competing with lots of other results, and people need to be able to find the right dataset amongst the noise. They may not have the specialist skills to use a portal, or knowledge of the correct terms to search for.
+					</aside>
+				</section>
+
+				<section>
+					<blockquote>Quality metadata is key to making data discoverable</blockquote>
+					<aside class="notes">Data producers need to create high-qaulity metadata, but also to employ SEO techniques to make the data more search-engine and user-friendly. Modern search engines also use the data to display richer results. Any solution must work at scale, not just for single datasets, and must be controllable by the data producer if it is to inspire confidence.</aside>
+				</section>
+
+				<section>
+					<h3>The Solution:</h3>
+					<p class="fragment">Help search engines understand the metadata</p>
+					<p class="fragment">Get the dataset to appear high up in search results</p>
+					<p class="fragment">Use search feedback to improve metadata in future</p>
+				</section>
+
+				<section>
+					<h3>Caveat</h3>
+					<p>Some of what I'm about to describe doesn't exist as an actual "thing" yet, but it's pretty cool nonetheless!</p>
+				</section>
+
+				<section>
+					<h3>Tech interruption</h3>
+					<p>A metadata record on the web looks like any other web page to a search engine. The "authority" of the web domain, and data tags embedded within the web page are used to position the page in the search results and determine what data is displayed.</p>
+				</section>
+
+				<section>
+					<p>Structured or machine-readable data is used by search engines to determine how the web page is displayed in a set of results, for example whether it shows a recipe, or a jobs listing or a news article.</p>
+				</section>
+
+				<section>
+					<p>By mapping the elements of our metadata to a structured data schema we can ensure search engines identify the metadata as representing a "dataset" in a "datacatalog", and the title and abstract become the page title and description that appears in the search result.</p>
+				</section>
+
+				<section>
+					<h3>Quick wins</h3>
+					<p>Ensure that the title and abstract in the metadata are completed and follow basic SEO guidelines for length and language</p>
+					<p>Ensure you don't have metadata records in your portal with duplicate titles</p>
+					<p>Fix broken links</p>
+					<aside class="notes">These are simple fixes that ensure the web pages are not seen as low-quality and hence downgraded in search results.</aside>
+				</section>
+
+				<section>
+					<h3>It's all about keywords</h3>
+					<p>Metadata keywords can also be mapped to elements the structured data, but can also be used inside the abstract or page description.</p>
+					<p>This needs to be done intelligently, eg as part of sentences rather than lists.</p>
+					<p>You should include keywords that work for all levels of expertise</p>
+					<aside class="notes">Take into consideration variations in spelling, synonyms and so on. Geographic keywords help to provide context for the user.</aside>
+				</section>
+
+				<section>
+					<h3>Feedback</h3>
+					<p>Web analytics can be used to provide valuable metrics on usage of your portal, and any problems</p>
+					<p>Services such as google trends can be used to ensure you're using the correct terms to describe your data</p>
+					<p>You can feed these results back into the metadata, in a process of continual improvement</p>
+					<aside class="notes">Do people stay on the site, and go on to download a dataset, or do they leave very quickly?
+					Are particular datasets more "popular"? Are people commonly mis-spelling a term, or using gaelic or welsh terms?</aside>
+				</section>
+
+				<section>
+					<h3>Clickbait</h3>
+					<p>Modern Natural Language Processing algorithms, and other Machine-Learning techniques can be used to automate the process of identifying suitable keywords from your data or metadata, and even constructing suitable titles and descriptions</p>
+					<aside class="notes">This is the process used to algorithmically generate headlines for news articles. Obviously any sort of AI/automated process requires careful consideration and testing, with a human reviewing the results</aside>
+				</section>
+
+				<section>
+					<h3>This seems like a lot of work!</h3>
+					<p>No! It's possible to automate (almost) the entire process, from identifying the dataset to be published, through producing standards-compliant high-quality metadata, to it being available in search engines, and all in open source software.</p>
+					<aside class="notes">Our workflow does envisage a human element- to at least review the metadata before producing the big green button to publish</aside>
+				</section>
+
+				<section>
+					<h3>Rly???</h3>
+					<p>Yes, but it's a big undertaking!</p>
+					<aside class="notes">There are a lot of moving parts and gotchas, particularly around the ML element, and scaling the solution</aside>
+				</section>
+
+				<section>
+					<h3>Watch this space!</h3>
+					<p>Questions?</p>
+				</section>
+
+
+
 			</div>
 		</div>
 
