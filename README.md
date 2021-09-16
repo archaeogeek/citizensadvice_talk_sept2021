@@ -1,3 +1,3 @@
-#This one cool data trick you won't believe!
+# This one cool data trick you won't believe!
 
-Talk to Citizen's Advice Data Strategy Group, Septemeber 2021. See [https://archaeogeek.github.io/citizensadvice_talk_sept2021/](https://archaeogeek.github.io/citizensadvice_talk_sept2021/) for the online version
+Talk to Citizen's Advice Data Strategy Group, Septemeber 2021. See [https://archaeogeek.github.io/citizensadvice_talk_sept2021/](https://archaeogeek.github.io/citizensadvice_talk_sept2021/) for the online version and the pdf version at [https://github.com/archaeogeek/citizensadvice_talk_sept2021/DataPublishingTalk_160921.pdf](https://github.com/archaeogeek/citizensadvice_talk_sept2021/DataPublishingTalk_160921.pdf)

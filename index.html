@@ -74,12 +74,13 @@
 
 				<section data-background-image="./images/ogrinfo.png" alt="ford production line" class="full" data-background-size="cover">
 					<p class="box-right"  style="margin-top:200px !important">Some metadata elements can be easily derived from the dataset</p>
-				<aside class="notes">There are many tools out there that will derive at least some metadata elements for you, including the USGS Metadata Wizard, which has been around for many years</aside>
+				<aside class="notes">You can get at this sort of metadata in your file browser- think titles, locations, change dates, or tools like QGIS, which will show you spatial extents. What's more difficult is automatically doing this for lots of datasets, so we've got an ETL "Crawler" which automatically discovers data (flat files, database tables etc) and automatically derives this simple metadata.</aside>
 				</section>
 
 				<section data-background-image="./images/jonny5.jpg" alt="jonny5" class="full" data-background-size="cover">
 					<p class="box-left" style="margin-top:200px !important">We need help to derive some elements such as human-readable titles and descriptions</p>
 				<p class="attribution" style="color: white">http://www.popgun80sband.co.uk/blog/top-ten-robots-of-the-80s/</p>
+				<aside class="notes">Human-readable titles, descriptions, keywords and so on are much harder to do programatically, and also hard for users to do at scale. What works manually for a few records doesn't scale to thousands.</aside>
 				</section>
 
 				<section data-background-image="./images/abstract.png" alt="ML" data-background-size="contain" data-background-position="bottom" class="full">
@@ -101,7 +102,7 @@
 								<em>Auto-Summarise</em><br /><small>A deterministic river temperature model to prioritise management of riparian woodlands to reduce summer maximum river temperatures and a riparian woodland prioritisation score that looks to maximise the benefits of Riparian tree planting for protecting Scotland’s rivers from the adverse effects of climate change.</small>
 							</span>
 						</p>
-					<aside class="notes">This is a real example of putting a complex block of text through our prototype ML workflow. Metadata keywords should be used inside the abstract. This needs to be done intelligently, eg as part of sentences rather than lists. You should include keywords that work for all levels of expertise, and take into consideration variations in spelling, synonyms and so on. Geographic keywords help to provide context for the user.</aside>
+					<aside class="notes">This is a real example of putting a complex block of text through our prototype ML workflow. We can generate keywords and geographic keywords, and auto-summarise to create a short description. Metadata keywords should be used inside the abstract. This needs to be done intelligently, eg as part of sentences rather than lists. You should include keywords that work for all levels of expertise, and take into consideration variations in spelling, synonyms and so on. Geographic keywords help to provide context for the user.</aside>
 				</section>
 
 				<section>
@@ -139,7 +140,7 @@
 					<p class="box-left fragment fade-in">
 						Fix broken links
 					</p>
-					<aside class="notes">These are simple fixes that ensure the web pages are not seen as low-quality and hence downgraded in search results.</aside>
+					<aside class="notes">Ensuring that the title and description/abstract are present and not too short or long, and ensuring you don't have duplicate titles or broken links are simple fixes that ensure the web pages are not seen as low-quality and hence downgraded in search results.</aside>
 				</section>
 
 				<section data-background-image="./images/feedback.webp" alt="feedback" class="full" data-background-size="cover" data-background-position="top">
@@ -153,17 +154,17 @@
 							</span>
 						</p>
 						<aside class="notes">Do people stay on the site, and go on to download a dataset, or do they leave very quickly?
-					Are particular datasets more "popular"? Are people commonly mis-spelling a term, or using gaelic or welsh terms?</aside>
+					Are particular datasets more "popular"? Are people commonly mis-spelling a term, or using gaelic or welsh terms? Get direct qualitative feedback from users too</aside>
 				</section>					
 					
 				<section data-background-image="./images/workflow.png" alt="workflow" class="full" data-background-size="contain" data-background-position="bottom 0px right 300px">
 					<h3 class="box-left" style="color:white;margin-top: 250px !important">Our <b>proposed</b> workflow</h3>
-					<aside class="notes">Our workflow does envisage a human element- to at least review the metadata before producing the big green button to publish</aside>
+					<aside class="notes">Our proposed workflow starts with finding the data and doing both automatic extraction of simple metadata, and using ML to derive the other elements. Then we pull them together to create the full metadata record. People can review this, and see it internally, or publish it so it's visible to google. The search analytics and usage statistics can feed back into the keywords and hence improve the metadata in a virtuous circle.</aside>
 				</section>
 
 				<section data-background-image="./images/tractor-homemade.jpg" alt="home-made tractor" class="full" data-background-size="cover">
 					<h3 class="box" style="color:white">Where we are at the moment</h3>
-					<aside class="notes">We have all the pieces but need to glue them together into a usable product. It's a bit heath robinson right now</aside>
+					<aside class="notes">We have all the pieces but need to glue them together into a usable product. It's a bit heath robinson right now. There are lots of moving parts, and areas where we're going to get expert assistance such as on SEO (to test our ML results against what they would do) and to ensure we're using the right ML models and so on.</aside>
 				</section>
 
 				<section data-background-image="./images/tesla.jpg" alt="home-made tractor" class="full" data-background-size="cover">
@@ -198,6 +199,10 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				pdfMaxPagesPerSlide: 1,
+				pdfSeparateFragments: true,
+				showNotes: "true",
+
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
