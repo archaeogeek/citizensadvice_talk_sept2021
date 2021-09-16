@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-		<title>This one cool metadata trick you won't believe</title>
+		<title>This one cool data trick you won't believe</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -20,131 +20,172 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>This one cool metadata trick you won't believe!</h1>
-					<h3>How applying clickbait and SEO techniques to your metadata can make it more discoverable</h3>
+					<h1>This one cool data trick you won't believe!</h1>
+					<h3>How applying clickbait and SEO techniques to your data can make it more discoverable</h3>
 					<p>Jo Cook | Data Discovery Lead | Astun Technology</p>
 				</section>
 				
+
 				<section>
-					
-				</section>
-
-				<section data-background-image="./images/iShare.jpg" alt="ishare" class="full" data-background-size="cover">
-					<h3 class="fragment boxed">Who is this "Astun Technology" of which you speak?</h3>
-					<div class="fragment boxed">
-						<p>Astun Technology provide spatial and data discoverability services to a cross-sector range of clients, based on an open source technology stack.</p>
-						<p>We contribute to software development, documentation and guidance, and standards implementation and development.</p>
+					<h3>Who is this "Astun Technology" of which you speak?</h3>
+					<div class="fragment">
+						<p>Astun Technology was founded in 2006. We're based in Epsom, but our 25-ish staff are spread across Europe. We do spatial and data "stuff", based on an open source technology stack.</p>
 					</div>
-					<aside class="notes">The sorts of services we supply are mapping platforms, spatial databases and metadata portals to clients such as Scottish Government, DEFRA, EA, Ordnance Survey and Local Authorities.</aside>
+					<aside class="notes">The sorts of services we supply are mapping platforms, spatial databases and metadata portals to clients such as Scottish Government, DEFRA, EA, Ordnance Survey and Local Authorities. We also contribute to software development, documentation and guidance, and standards implementation and development.</aside>
 				</section>
 
-				<section data-background-image="./images/support.jpeg" alt="ishare" class="full" data-background-size="cover">
-					<h3 class="fragment boxed">...and who are you?</h3>
-					<div class="fragment boxed">
+				<section data-background-image="./images/support.jpeg" alt="climbing rope" class="full" data-background-size="cover">
+					<h3 class="box" style="color:white">...and who are you?</h3>
+					<div class="fragment box">
 						<p>Hi I'm Jo 👋</p>
-						<p>I've worked at Astun for over 10 years and lead on the data discovery work.</p>
-						<p>I'm mad keen on problem solving and acting as an enabler for people.</p>
+						<p>I've worked at Astun for over 10 years and lead on data discovery (metadata etc). I'm mad keen on problem solving and acting as an enabler. I also do "stuff" with OSGeo and the AGI.</p>
 					</div>
 				</section>
 
-				<section>
-					<h3>The premise of this talk:</h3>
-					<p class="fragment">People are mainly using search engines to find data</p>
-					<p class="fragment">Data needs to be <span class="fragment sentence">Findable</span> <span class="fragment sentence">Accessible</span> <span class="fragment sentence">Interoperable</span> <span class="fragment sentence">Reusable</span></p>
+				<section data-background-image="./images/cans.jpg" alt="cans" class="full" data-background-size="cover">
+					<h3 class="fragment box" style="color:white">Today's Problem</h3>
+					<p class="fragment" style="line-height:250%"><span class="box">People need to find data</span></p>
+					<p class="fragment"style="line-height:250%"><span class="box">Metadata helps, but it's hard!</span></p>
+					<p class="fragment" style="line-height:250%"><span class="box">It's all about search engines</span></p>
+					<aside class="notes">The finding data and metadata pieces of the puzzle work just as much for internal data as external</aside>
+				</section>
+
+				<section data-background-image="./images/help.jpeg" alt="help" class="full" data-background-size="cover">
+					<h3 class="box" style="color:white">The Solution</h3>
+						<p class="fragment" style="line-height:250%">
+							<span class="box">Help people create metadata</span></p>
+						<p class="fragment" style="line-height:250%">
+							<span class="box">Help search engines understand it</span>
+						</p>
+						<p class="fragment" style="line-height:250%">
+							<span class="box">Get the dataset to appear high up in search results</span>
+						</p>
 				</section>
 
 				<section>
-					<blockquote>Google was the highest-ranking traffic source for 4 of the 6 (data portals) assessed
+					<h3>Helping people create metadata</h3>
+					<blockquote>"Quality metadata is key to making data discoverable"
 						<footer>Geospatial Commission "Recommendations For SEO of UK Government’s Geospatial Metadata" 2019</footer>
 					</blockquote>
-					<aside class="notes">
+					<aside class="notes">Data producers need to create high-qaulity metadata, but also to employ SEO techniques to make the data more search-engine and user-friendly. Modern search engines also use the data to display richer results. Any solution must work at scale, not just for single datasets, and must be controllable by the data producer if it is to inspire confidence.
 						Geospatial Commission Research from 2019 found that 70% of users searching for data will use search engines rather than portals. So, datasets are competing with lots of other results, and people need to be able to find the right dataset amongst the noise. They may not have the specialist skills to use a portal, or knowledge of the correct terms to search for.
 					</aside>
 				</section>
 
+				<section data-background-image="./images/ogrinfo.png" alt="ford production line" class="full" data-background-size="cover">
+					<p class="box-right"  style="margin-top:200px !important">Some metadata elements can be easily derived from the dataset</p>
+				<aside class="notes">There are many tools out there that will derive at least some metadata elements for you, including the USGS Metadata Wizard, which has been around for many years</aside>
+				</section>
+
+				<section data-background-image="./images/jonny5.jpg" alt="jonny5" class="full" data-background-size="cover">
+					<p class="box-left" style="margin-top:200px !important">We need help to derive some elements such as human-readable titles and descriptions</p>
+				<p class="attribution" style="color: white">http://www.popgun80sband.co.uk/blog/top-ten-robots-of-the-80s/</p>
+				</section>
+
+				<section data-background-image="./images/abstract.png" alt="ML" data-background-size="contain" data-background-position="bottom" class="full">
+					<h3 class="box" style="color:white">IRL Example!</h3>
+						<p class="fragment fade-in-then-out">
+							<span class="box-left">
+								<em>Extract Keywords</em><br /> 
+						lochs, riparian, rivers, woodland
+							</span>
+						</p>
+						<p class="fragment fade-in-then-out">
+							<span class="box-left">
+								<em>Geoparse</em><br />
+						scotland, atlantic
+							</span>
+						</p>
+						<p class="fragment fade-in">
+							<span class="box-left">
+								<em>Auto-Summarise</em><br /><small>A deterministic river temperature model to prioritise management of riparian woodlands to reduce summer maximum river temperatures and a riparian woodland prioritisation score that looks to maximise the benefits of Riparian tree planting for protecting Scotland’s rivers from the adverse effects of climate change.</small>
+							</span>
+						</p>
+					<aside class="notes">This is a real example of putting a complex block of text through our prototype ML workflow. Metadata keywords should be used inside the abstract. This needs to be done intelligently, eg as part of sentences rather than lists. You should include keywords that work for all levels of expertise, and take into consideration variations in spelling, synonyms and so on. Geographic keywords help to provide context for the user.</aside>
+				</section>
+
 				<section>
-					<blockquote>Quality metadata is key to making data discoverable
-						<footer>Geospatial Commission "Recommendations For SEO of UK Government’s Geospatial Metadata" 2019</footer>
+					<h3>Help search engines understand your data</h3>
+				</section>
+
+				<section data-background-image="./images/google.png" alt="google market share" class="full" data-background-size="contain">
+					<span class="fragment box-right" style="margin-top:250px !important">
+						<blockquote>"I just go straight to Google"
+						<footer>Astun User Research, 2021</footer>
 					</blockquote>
-					<aside class="notes">Data producers need to create high-qaulity metadata, but also to employ SEO techniques to make the data more search-engine and user-friendly. Modern search engines also use the data to display richer results. Any solution must work at scale, not just for single datasets, and must be controllable by the data producer if it is to inspire confidence.</aside>
+					</span>
+					<aside class="notes">There's no point in adding extra complexity to people's workflows- they are going to use search engines anyway so let's just make it as easy as possible to do that. Google has a 94% market share across all of it's products</aside>
 				</section>
 
-				<section>
-					<h3>The Solution:</h3>
-					<p class="fragment">Help search engines understand the metadata</p>
-					<p class="fragment">Get the dataset to appear high up in search results</p>
-					<p class="fragment">Use search feedback to improve metadata in future</p>
+				<section data-background-image="./images/woodlands_geonetwork.png" alt="geonetwork woodlands" class="full" data-background-size="contain">
+					<span class="box-right fragment" style="margin-top:150px !important">
+						<p>Metadata can be mapped to machine-readable structured data so that search engines use the elements in the search results</p>
+						<img src="./images/searchresult.png" alt="woodlands_searchresult" width="400px"/>
+						<aside class="notes">This is done automatically in GeoNetwork at least, it doesn't require user intervention</aside>
+					</span>
 				</section>
 
-				<section>
-					<h3>Caveat</h3>
-					<p>Some of what I'm about to describe doesn't exist as an actual "thing" yet, but it's pretty cool nonetheless!</p>
+				<section data-background-image="./images/firstplace.jpg" alt="first place" class="full" data-background-size="cover">
+					<h3 class="box" style="color:white">Getting your data to appear high up in search results</h3>
 				</section>
 
-				<section>
-					<h3>Tech interruption</h3>
-					<p>A metadata record on the web looks like any other web page to a search engine. Data tags embedded within the web page are used to position the page in the search results and determine what data is displayed.</p>
-				</section>
-
-				<section>
-					<p>Structured or machine-readable data is used by search engines to determine how the web page is displayed in a set of results, for example whether it shows a recipe, or a jobs listing or a news article.</p>
-				</section>
-
-				<section>
-					<p>By mapping the elements of our metadata to a structured data schema we can ensure search engines identify the metadata as representing a <em>dataset</em> in a <em>datacatalog</em>, and the title and abstract become the page title and description that appears in the search result.</p>
-				</section>
-
-				<section>
-					<h3>Quick wins</h3>
-					<p class="fragment">Ensure that the title and abstract in the metadata are present and follow basic SEO guidelines for length and language</p>
-					<p class="fragment">Ensure you don't have metadata records in your portal with duplicate titles</p>
-					<p class="fragment">Fix broken links</p>
+				<section data-background-image="./images/success-kid.jpg" alt="gatsby" class="full" data-background-size="cover" data-background-position="top">
+					<h3 class="box" style="color:white">Quick wins (aka clickbait)</h3>
+					<p class="fragment box-left fade-in-then-out">
+						Ensure that the title and abstract are present and follow basic SEO guidelines for length and language</p>
+					<p class="box-left fragment fade-in-then-out">
+						Ensure you don't have metadata records with duplicate titles
+					</p>
+					<p class="box-left fragment fade-in">
+						Fix broken links
+					</p>
 					<aside class="notes">These are simple fixes that ensure the web pages are not seen as low-quality and hence downgraded in search results.</aside>
 				</section>
 
-				<section>
-					<h3>It's all about keywords</h3>
-					<p>Metadata keywords can also be mapped to elements the structured data, but can also be used inside the abstract or page description.</p>
-					<p>This needs to be done intelligently, eg as part of sentences rather than lists.</p>
-					<p>You should include keywords that work for all levels of expertise</p>
-					<aside class="notes">Take into consideration variations in spelling, synonyms and so on. Geographic keywords help to provide context for the user.</aside>
-				</section>
-
-				<section>
-					<h3>Feedback</h3>
-					<p>Web analytics can be used to provide valuable metrics on usage of your portal, and any problems</p>
-					<p>Services such as google trends can be used to ensure you're using the correct terms to describe your data</p>
-					<p>You can feed these results back into the metadata, in a process of continual improvement</p>
-					<aside class="notes">Do people stay on the site, and go on to download a dataset, or do they leave very quickly?
+				<section data-background-image="./images/feedback.webp" alt="feedback" class="full" data-background-size="cover" data-background-position="top">
+					<h3 class="box" style="color:white">Feedback</h3>
+						<p class="fragment fade-in-then-out">
+							<span class="box-left">Web analytics, Google trends, search statistics can provide useful insights into who's using your data
+							</span>
+						</p>
+						<p class="fragment fade-in">
+							<span class="box-left">Give people the chance to submit feedback (good or bad)
+							</span>
+						</p>
+						<aside class="notes">Do people stay on the site, and go on to download a dataset, or do they leave very quickly?
 					Are particular datasets more "popular"? Are people commonly mis-spelling a term, or using gaelic or welsh terms?</aside>
-				</section>
-
-				<section>
-					<h3>Clickbait</h3>
-					<p>Modern Natural Language Processing algorithms, and other Machine-Learning techniques can be used to automate the process of identifying suitable keywords from your data or metadata, and even constructing suitable titles and descriptions</p>
-					<aside class="notes">This is the process used to algorithmically generate headlines for news articles. Obviously any sort of AI/automated process requires careful consideration and testing, with a human reviewing the results</aside>
-				</section>
-
-				<section>
-					<h3>This seems like a lot of work!</h3>
-					<p>No! It's possible to automate (almost) the entire process, from identifying the dataset to be published, through producing standards-compliant high-quality metadata, to it being available in search engines, and all in open source software.</p>
+				</section>					
+					
+				<section data-background-image="./images/workflow.png" alt="workflow" class="full" data-background-size="contain" data-background-position="bottom 0px right 300px">
+					<h3 class="box-left" style="color:white;margin-top: 250px !important">Our <b>proposed</b> workflow</h3>
 					<aside class="notes">Our workflow does envisage a human element- to at least review the metadata before producing the big green button to publish</aside>
 				</section>
 
-				<section>
-					<h3>Rly???</h3>
-					<p>Yes, but it's a big undertaking!</p>
-					<aside class="notes">There are a lot of moving parts and gotchas, particularly around the ML element, and scaling the solution</aside>
+				<section data-background-image="./images/tractor-homemade.jpg" alt="home-made tractor" class="full" data-background-size="cover">
+					<h3 class="box" style="color:white">Where we are at the moment</h3>
+					<aside class="notes">We have all the pieces but need to glue them together into a usable product. It's a bit heath robinson right now</aside>
 				</section>
 
-				<section>
-					<h3>Watch this space!</h3>
-					<p>Questions?</p>
+				<section data-background-image="./images/tesla.jpg" alt="home-made tractor" class="full" data-background-size="cover">
+					<h3 class="box" style="color:white">Where we hope to be in a few months</h3>
+					<p class="fragment box" style="color:white">Watch this space!</p>
+					<aside class="notes">We're really excited about this- personally it fulfills many of my geek requirements, and it's all built on open source</aside>
 				</section>
 
-
+				<section data-background-image="./images/kitten.jpg" alt="kitty" class="full" data-background-size="cover">
+					<h3 class="box" style="color:white">Thank you for having me!</h3>
+					<p class="box" style="color: var(--astun-red)">jocook@astuntechnology.com | @archaeogeek</p>
+				</section>
 
 			</div>
+
+			<div class="fe-persistent-header">
+ 				<img src="./images/AstunSmallLogo.png"/>
+				<p style="color: var(--astun-red)">This one cool data trick you won't believe</p>
+			</div>
+
+
+
 		</div>
 
 		<script src="dist/reveal.js"></script>
@@ -160,7 +201,9 @@
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
+
+							});
 		</script>
 	</body>
 </html>
+		

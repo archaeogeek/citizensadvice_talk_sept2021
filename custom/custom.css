@@ -118,7 +118,8 @@
 .fe-persistent-header p {
   color: black;
   float: right;
-  font-size: small;
+  font-size: 20px;
+  padding-top: 20px;
   margin: 30px 60px 20px;
 }
 
@@ -129,9 +130,9 @@
 }
 .fe-persistent-header a:nth-child(2) { float: left; }
 
-.reveal blockquote {
+/*.reveal blockquote {*/
 /*  font-size: 18px;*/
-  font-style: italic;
+  /*font-style: italic;
   width:100%;
   margin: 0.25em 0;
   line-height: 1.45;
@@ -139,7 +140,7 @@
   background: none;
   padding:10px;
   box-shadow: none;
-}
+}*/
 
 /*.reveal blockquote:before {
   display: block;
@@ -168,4 +169,12 @@ blockquote footer {
 
 blockquote cite:before {
   content: "\2014 \2009";
+}
+
+.box {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 20px; 
+    margin-top:100px !important;
 }
